@@ -21,6 +21,7 @@ public class ItemController {
 
 	@GetMapping("/titles")
 	public List<String> getTitles(@RequestParam("rating") Double rating) {
+		System.out.println("hola");
 		List<String> titles = itemService.getTitles(rating);
 		return titles;
 	}
